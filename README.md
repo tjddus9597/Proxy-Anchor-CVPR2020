@@ -167,7 +167,12 @@ Follow the steps below to evaluate the provided pretrained model or your trained
 
 ```bash
 # The parameters should be changed according to the model to be evaluated.
-python evaluate.py --gpu-id 0 --batch-size 120 --model bn_inception --embedding-size 512  --dataset cub --resume /set/your/model/path/best_model.pth
+python evaluate.py --gpu-id 0 \
+                   --batch-size 120 \
+                   --model bn_inception \
+                   --embedding-size 512 \
+                   --dataset cub \
+                   --resume /set/your/model/path/best_model.pth
 ```
 
 
