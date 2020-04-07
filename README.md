@@ -6,9 +6,9 @@ Official PyTorch implementation of CVPR 2020 paper [**Proxy Anchor Loss for Deep
 A standard embedding network trained with **Proxy-Anchor Loss** achieves state-of-the-art performance and most quickly converges.
 This repository provides source code of experiments on four datasets (CUB-200-2011, Cars-196, Stanford Online Products and In-shop) and pretrained models.
 
-#### Accuracy in Recall@1 versus training time on the Cars-196
+### Accuracy in Recall@1 versus training time on the Cars-196
 
-<p align="center"><img src="misc/Recall_Trainingtime.jpg" alt="graph" width="60%"></p>
+<p align="center"><img src="misc/Recall_Trainingtime.jpg" alt="graph" width="50%"></p>
 
 
 
