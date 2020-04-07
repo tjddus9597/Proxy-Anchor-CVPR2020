@@ -38,7 +38,7 @@ This repository provides source code of experiments on four datasets (CUB-200-20
 
 ## Training Embedding Network
 
-Note that a sufficiently large batch size and good parameters resulted in better overall performance than the performance described in the paper. You can download the trained model through the hyperlink in the table.
+Note that a sufficiently large batch size and good parameters resulted in better overall performance than that described in the paper. You can download the trained model through the hyperlink in the table.
 
 ### CUB-200-2011
 
@@ -164,7 +164,7 @@ python train.py --gpu-id 0 \
 
 ## Evaluating Image Retrieval
 
-Follow the steps below to evaluate the provided pretrained model or your trained model. 
+Follow the below steps to evaluate the provided pretrained model or your trained model. 
 
 Trained best model will be saved in the `./logs/folder_name`.
 
