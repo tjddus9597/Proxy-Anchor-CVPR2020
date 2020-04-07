@@ -2,14 +2,12 @@
 # Proxy Anchor Loss for Deep Metric Learning
 
 Official PyTorch implementation of CVPR 2020 paper [**Proxy Anchor Loss for Deep Metric Learning**](https://arxiv.org/abs/2003.13911). 
-
-A standard embedding network trained with **Proxy-Anchor Loss** achieves state-of-the-art performance and most quickly converges .
-
+A standard embedding network trained with **Proxy-Anchor Loss** achieves state-of-the-art performance and most quickly converges.
 This repository provides source code of experiments on four datasets (CUB-200-2011, Cars-196, Stanford Online Products and In-shop) and pretrained models.
 
 #### Accuracy in Recall@1 versus training time on the Cars-196
 
-<p align="center"><img src="../misc/Recall_Trainingtime.jpg" alt="graph" width="60%"></p>
+<p align="center"><img src="misc/Recall_Trainingtime.jpg" alt="graph" width="60%"></p>
 
 
 
@@ -45,13 +43,31 @@ Note that a sufficiently large batch size and good parameters resulted in better
 - Train a embedding network of Inception-BN (d=512) using **Proxy-Anchor loss**
 
 ```bash
-python train.py --gpu-id 0 --loss Proxy_Anchor--model bn_inception --embedding-size 512 --batch-size 180 --lr 1e-4 --dataset cub --warm 1 --bn-freeze 1 --lr-decay-step 10
+python train.py --gpu-id 0 \
+                --loss Proxy_Anchor \
+                --model bn_inception \
+                --embedding-size 512 \
+                --batch-size 180 \
+                --lr 1e-4 \
+                --dataset cub \
+                --warm 1 \
+                --bn-freeze 1 \
+                --lr-decay-step 10
 ```
 
 - Train a embedding network of ResNet-50 (d=512) using **Proxy-Anchor loss**
 
 ```bash
-python train.py --gpu-id 0 --loss Proxy_Anchor --model resnet50 --embedding-size 512 --batch-size 120 --lr 1e-4 --dataset cub --warm 5 --bn-freeze 1 --lr-decay-step 5
+python train.py --gpu-id 0 \
+                --loss Proxy_Anchor \
+                --model resnet50 \
+                --embedding-size 512 \
+                --batch-size 120 \
+                --lr 1e-4 \
+                --dataset cub \
+                --warm 5 \
+                --bn-freeze 1 \
+                --lr-decay-step 5
 ```
 
 | Method | Backbone | R@1 | R@2 | R@4 | R@8 |
@@ -64,13 +80,31 @@ python train.py --gpu-id 0 --loss Proxy_Anchor --model resnet50 --embedding-size
 - Train a embedding network of Inception-BN (d=512) using **Proxy-Anchor loss**
 
 ```bash
-python train.py --gpu-id 0 --loss Proxy_Anchor --model bn_inception --embedding-size 512 --batch-size 180 --lr 1e-4 --dataset cars --warm 1 --bn-freeze 1 --lr-decay-step 20
+python train.py --gpu-id 0 \
+                --loss Proxy_Anchor \
+                --model bn_inception \
+                --embedding-size 512 \
+                --batch-size 180 \
+                --lr 1e-4 \
+                --dataset cars \
+                --warm 1 \
+                --bn-freeze 1 \
+                --lr-decay-step 20
 ```
 
 - Train a embedding network of ResNet-50 (d=512) using **Proxy-Anchor loss**
 
 ```bash
-python train.py --gpu-id 0 --loss Proxy_Anchor --model resnet50 --embedding-size 512 --batch-size 120 --lr 1e-4 --dataset cars --warm 5 --bn-freeze 1 --lr-decay-step 10 
+python train.py --gpu-id 0 \
+                --loss Proxy_Anchor \
+                --model resnet50 \
+                --embedding-size 512 \
+                --batch-size 120 \
+                --lr 1e-4 \
+                --dataset cars \
+                --warm 5 \
+                --bn-freeze 1 \
+                --lr-decay-step 10 
 ```
 
 | Method | Backbone | R@1 | R@2 | R@4 | R@8 |
@@ -83,7 +117,18 @@ python train.py --gpu-id 0 --loss Proxy_Anchor --model resnet50 --embedding-size
 - Train a embedding network of Inception-BN (d=512) using **Proxy-Anchor loss**
 
 ```bash
-python train.py --gpu-id 0 --loss Proxy_Anchor --model bn_inception --embedding-size 512 --batch-size 180 --lr 6e-4 --dataset SOP --warm 1 --bn-freeze 0 --l2-norm 1 --lr-decay-step 20 --lr-decay-gamma 0.25
+python train.py --gpu-id 0 \
+                --loss Proxy_Anchor \
+                --model bn_inception \
+                --embedding-size 512 \
+                --batch-size 180 \
+                --lr 6e-4 \
+                --dataset SOP \
+                --warm 1 \
+                --bn-freeze 0 \
+                --l2-norm 1 \
+                --lr-decay-step 20 \
+                --lr-decay-gamma 0.25
 ```
 
 | Method | Backbone | R@1 | R@10 | R@100 | R@1000 |
@@ -95,7 +140,18 @@ python train.py --gpu-id 0 --loss Proxy_Anchor --model bn_inception --embedding-
 - Train a embedding network of Inception-BN (d=512) using **Proxy-Anchor loss**
 
 ```bash
-python train.py --gpu-id 0 --loss Proxy_Anchor --model bn_inception --embedding-size 512 --batch-size 180 --lr 6e-4 --dataset Inshop --warm 1 --bn-freeze 0 --l2-norm 1 --lr-decay-step 20 --lr-decay-gamma 0.25
+python train.py --gpu-id 0 \
+                --loss Proxy_Anchor \
+                --model bn_inception \
+                --embedding-size 512 \
+                --batch-size 180 \
+                --lr 6e-4 \
+                --dataset Inshop \
+                --warm 1 \
+                --bn-freeze 0 \
+                --l2-norm 1 \
+                --lr-decay-step 20 \
+                --lr-decay-gamma 0.25
 ```
 
 | Method | Backbone | R@1 | R@10 | R@20 | R@30 | R@40 |
