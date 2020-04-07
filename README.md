@@ -9,7 +9,7 @@ This repository provides source code of experiments on four datasets (CUB-200-20
 
 ### Accuracy in Recall@1 versus training time on the Cars-196
 
-<p align="left"><img src="misc/Recall_Trainingtime.jpg" alt="graph" width="50%"></p>
+<p align="left"><img src="misc/Recall_Trainingtime.jpg" alt="graph" width="55%"></p>
 
 
 
