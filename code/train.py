@@ -1,7 +1,6 @@
 import torch, math, time, argparse, os
 import random, dataset, utils, losses, net
 import numpy as np
-import matplotlib.pyplot as plt
 
 from dataset.Inshop import Inshop_Dataset
 from net.resnet import *
