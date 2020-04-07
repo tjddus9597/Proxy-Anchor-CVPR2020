@@ -163,7 +163,9 @@ python train.py --gpu-id 0 \
 
 ## Evaluating Image Retrieval
 
-Follow the steps below to evaluate the provided pretrained model or your trained model. Trained best model will be saved in the `./logs/folder_name`.
+Follow the steps below to evaluate the provided pretrained model or your trained model. 
+
+Trained best model will be saved in the `./logs/folder_name`.
 
 ```bash
 # The parameters should be changed according to the model to be evaluated.
