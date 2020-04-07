@@ -1,7 +1,6 @@
 import torch, math, time, argparse, json, os, sys
 import random, dataset, utils, losses, net
 import numpy as np
-import matplotlib.pyplot as plt
 
 from dataset.Inshop import Inshop_Dataset
 from net.resnet import *
@@ -144,7 +143,6 @@ else:
 with torch.no_grad():
     print("**Evaluating...**")
     if args.dataset == 'Inshop':
-        NMI = 0
         Recalls = utils.evaluate_cos_Inshop(model, dl_query, dl_gallery)
 
     elif args.dataset != 'SOP':
