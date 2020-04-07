@@ -315,7 +315,6 @@ for epoch in range(0, args.nb_epochs):
         with torch.no_grad():
             print("**Evaluating...**")
             if args.dataset == 'Inshop':
-                NMI = 0
                 Recalls = utils.evaluate_cos_Inshop(model, dl_query, dl_gallery)
             elif args.dataset != 'SOP':
                 Recalls = utils.evaluate_cos(model, dl_ev)
