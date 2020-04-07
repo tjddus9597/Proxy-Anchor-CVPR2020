@@ -2,6 +2,7 @@
 # Proxy Anchor Loss for Deep Metric Learning
 
 Official PyTorch implementation of CVPR 2020 paper [**Proxy Anchor Loss for Deep Metric Learning**](https://arxiv.org/abs/2003.13911). 
+
 A standard embedding network trained with **Proxy-Anchor Loss** achieves state-of-the-art performance and most quickly converges.
 This repository provides source code of experiments on four datasets (CUB-200-2011, Cars-196, Stanford Online Products and In-shop) and pretrained models.
 
