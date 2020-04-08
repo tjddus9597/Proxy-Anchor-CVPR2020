@@ -128,7 +128,6 @@ python train.py --gpu-id 0 \
                 --dataset SOP \
                 --warm 1 \
                 --bn-freeze 0 \
-                --l2-norm 1 \
                 --lr-decay-step 20 \
                 --lr-decay-gamma 0.25
 ```
@@ -151,7 +150,6 @@ python train.py --gpu-id 0 \
                 --dataset Inshop \
                 --warm 1 \
                 --bn-freeze 0 \
-                --l2-norm 1 \
                 --lr-decay-step 20 \
                 --lr-decay-gamma 0.25
 ```
