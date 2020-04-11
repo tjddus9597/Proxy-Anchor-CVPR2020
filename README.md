@@ -189,7 +189,7 @@ Our code is modified and adapted on these great repositories:
 
 ## Other Implementations
 
-- [Pytorch, Tensorflow and Mxnet implementations](https://github.com/geonm/proxy-anchor-loss) (Thank you for Geonmo Gu :D)
+- [Pytorch, Tensorflow and Mxnet implementations](https://github.com/geonm/proxy-anchor-loss) (Thanks to Geonmo Gu for the implementation :D)
 
 
 
