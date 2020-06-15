@@ -197,10 +197,12 @@ Our code is modified and adapted on these great repositories:
 
 If you use this method or this code in your research, please cite as:
 
-    @inproceedings{kim2020proxy,
-      title={Proxy Anchor Loss for Deep Metric Learning},
-      author={Kim, Sungyeon and Kim, Dongwon and Cho, Minsu and Kwak, Suha},
-      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-      year={2020}
+    }
+    @InProceedings{Kim_2020_CVPR,
+      author = {Kim, Sungyeon and Kim, Dongwon and Cho, Minsu and Kwak, Suha},
+      title = {Proxy Anchor Loss for Deep Metric Learning},
+      booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      month = {June},
+      year = {2020}
     }
 
