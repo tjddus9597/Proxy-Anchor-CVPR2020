@@ -197,7 +197,7 @@ Our code is modified and adapted on these great repositories:
 
 If you use this method or this code in your research, please cite as:
 
-    }
+    
     @InProceedings{Kim_2020_CVPR,
       author = {Kim, Sungyeon and Kim, Dongwon and Cho, Minsu and Kwak, Suha},
       title = {Proxy Anchor Loss for Deep Metric Learning},
