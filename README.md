@@ -191,7 +191,8 @@ Our code is modified and adapted on these great repositories:
 
 - [Pytorch, Tensorflow and Mxnet implementations](https://github.com/geonm/proxy-anchor-loss)
 - [Keras implementations](https://github.com/nixingyang/Proxy-Anchor-Loss) 
-  (Thanks Geonmo and nixingyang for the good implementation :D)
+  
+(Thanks Geonmo and nixingyang for the good implementation :D)
 
 ## Citation
 
