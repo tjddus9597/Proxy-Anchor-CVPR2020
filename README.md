@@ -34,7 +34,7 @@ This repository provides source code of experiments on four datasets (CUB-200-20
 
 2. Extract the tgz or zip file into `./data/` (Exceptionally, for Cars-196, put the files in a `./data/cars196`)
 
-(Notice!) I found that the link that was previously uploaded for the CUB dataset was incorrect, so I correct the link. (CUB-200 -> CUB-200-2011)
+(Notice!) I found that the link that was previously uploaded for the CUB dataset was incorrect, so I corrected the link. (CUB-200 -> CUB-200-2011)
 If you have previously downloaded the CUB dataset from my repository, please download it again. 
 Thanks to myeongjun for reporting this issue!
 
