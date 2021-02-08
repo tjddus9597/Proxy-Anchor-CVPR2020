@@ -222,7 +222,7 @@ if args.gpu_id == -1:
 if args.loss == 'Proxy_Anchor':
     criterion = losses.Proxy_Anchor(nb_classes = nb_classes, sz_embed = args.sz_embedding, mrg = args.mrg, alpha = args.alpha).cuda()
 elif args.loss == 'Proxy_NCA':
-    criterion = losses.Proxy_NCA().cuda()
+    criterion = losses.Proxy_NCA(nb_classes = nb_classes, sz_embed = args.sz_embedding).cuda()
 elif args.loss == 'MS':
     criterion = losses.MultiSimilarityLoss().cuda()
 elif args.loss == 'Contrastive':
