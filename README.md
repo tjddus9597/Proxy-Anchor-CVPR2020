@@ -198,7 +198,7 @@ Thanks Geonmo and nixingyang for the good implementation :D
 
 ## New Method for Further Improvement
 Recently, our paper [**Embedding Transfer with Label Relaxation for Improved Metric Learning**](https://arxiv.org/abs/2103.14908) which presents the new knowledge distillation method for metric learning was accepted and will be presented at CVPR21.
-Our method can greatly improves the performance, or reduces sizes and output dimensions of target models with negligible performance degradation.
+Our new method can greatly improve the performance, or reduce sizes and output dimensions of target models with negligible performance degradation.
 If you are also interested in implementation of new knowlege distillation method for metric learning, please check the following repository.
 The new repository has been refactored based on the Proxy-Anchor Loss implementation, so those who have used this repository will be able to use new code easily.:D
 - [Embedding Transfer with Label Relaxation for Improved Metric Learning](https://github.com/tjddus9597/LabelRelaxation-CVPR21)
