@@ -14,12 +14,12 @@ class CUBirds(BaseDataset):
         index = 0
         for i in torchvision.datasets.ImageFolder(root = 
                 os.path.join(self.root, 'images')).imgs:
-            # i[1]: label, i[0]: root
+            # i[1]: label, i[0]: the full path to an image
             y = i[1]
             # fn needed for removing non-images starting with `._`
             fn = os.path.split(i[0])[1]
             if y in self.classes and fn[:2] != '._':
                 self.ys += [y]
                 self.I += [index]
-                self.im_paths.append(os.path.join(self.root, i[0]))
+                self.im_paths.append(i[0])
                 index += 1
