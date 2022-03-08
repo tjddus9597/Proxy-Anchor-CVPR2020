@@ -239,7 +239,9 @@ param_groups = [
     {'params': model.model.embedding.parameters() if args.gpu_id != -1 else model.module.model.embedding.parameters(), 'lr':float(args.lr) * 1},
 ]
 if args.loss == 'Proxy_Anchor':
-    param_groups.append({'params': criterion.proxies, 'lr':float(args.lr) * 100})
+    param_groups.append({'params': criterion.parameters(), 'lr':float(args.lr) * 100})
+elif args.loss == 'Proxy_NCA':
+    param_groups.append({'params': criterion.parameters(), 'lr':float(args.lr)})
 
 # Optimizer Setting
 if args.optimizer == 'sgd': 
