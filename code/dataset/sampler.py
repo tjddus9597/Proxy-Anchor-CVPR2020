@@ -7,7 +7,7 @@ from tqdm import *
 class BalancedSampler(Sampler):
     def __init__(self, data_source, batch_size, images_per_class=3):
         self.data_source = data_source
-        self.ys = data_source.ys
+        self.ys = np.array(data_source.ys)
         self.num_groups = batch_size // images_per_class
         self.batch_size = batch_size
         self.num_instances = images_per_class
@@ -23,7 +23,7 @@ class BalancedSampler(Sampler):
         while num_batches > 0:
             sampled_classes = np.random.choice(self.num_classes, self.num_groups, replace=False)
             for i in range(len(sampled_classes)):
-                ith_class_idxs = np.nonzero(np.array(self.ys) == sampled_classes[i])[0]
+                ith_class_idxs = np.nonzero(self.ys == sampled_classes[i])[0]
                 class_sel = np.random.choice(ith_class_idxs, size=self.num_instances, replace=True)
                 ret.extend(np.random.permutation(class_sel))
             num_batches -= 1
